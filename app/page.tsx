@@ -1,6 +1,7 @@
 import Image from "next/image";
 import AboutMe from "@/components/AboutMe/page"
 import Skills from "@/components/Skills/page"
+
 import CodeIcon from '@mui/icons-material/Code';
 
 export default function Home() {
@@ -10,8 +11,6 @@ export default function Home() {
       <AboutMe />
 
       <Skills />
-
-      
 
     </div>
   );
