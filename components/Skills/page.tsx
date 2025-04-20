@@ -31,6 +31,7 @@ export default function Skills() {
    
     return (
         <div className="pt-10 md:p-20">
+
             <div className="flex flex-wrap text-[60px] md:text-[80px] justify-center flex-wrap gap-5">
                 <div className="relative group">
                     <FaHtml5 className={`${baseIconClass} ${iconStyles.html}`} />

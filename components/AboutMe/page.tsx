@@ -3,7 +3,7 @@ import SocialMedia from '@/components/SocialMedia/page';
 export default function AboutMe() {
     return (
         <>
-            <div className='grid grid-cols-3 md:grid-cols-5 p-10 md:p-25 gap-10'>
+            <div className='grid grid-cols-3 md:grid-cols-5 gap-10'>
                 <div className='flex justify-center col-span-3 md:col-span-2'>
                     <img src='images/photo.png' className='max-h-100'/>
                 </div>
