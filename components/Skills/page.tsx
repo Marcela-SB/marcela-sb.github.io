@@ -1,16 +1,8 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJava, FaReact, FaGithub, FaPython} from "react-icons/fa";
+import { SiTypescript, SiTailwindcss, SiEclipseide, SiC, SiCplusplus } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import { FaGithub } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiEclipseide } from "react-icons/si";
-import { SiC, SiCplusplus } from "react-icons/si";
 
 
 // Map of styles for icons
@@ -33,15 +25,26 @@ const iconStyles = {
 
 // Common base class for all icons
 const baseIconClass =
-  "text-gray-500 transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_100px_black] dark:hover:drop-shadow-[0_0_10px_white]";
+  "text-gray-500 transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_100px_black] dark:hover:drop-shadow-[0_0_7px_white]";
 
 export default function Skills() {
    
     return (
-        <>
-            <h2 className="text-2xl font-bold mb-4">HABILIDADES</h2>
-            <div className="flex flex-wrap text-[80px] justify-between flex-wrap gap-4">
-                <FaHtml5 className={`${baseIconClass} ${iconStyles.html}`} />
+        <div className="pt-10 md:p-20">
+            <div className="flex flex-wrap text-[60px] md:text-[80px] justify-center flex-wrap gap-5">
+                <div className="relative group">
+                    <FaHtml5 className={`${baseIconClass} ${iconStyles.html}`} />
+                    <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
+                        HTML5
+                    </span>
+                </div>
+                <div className="relative group">
+                    <FaHtml5 className={`${baseIconClass} ${iconStyles.html}`} />
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
+                        HTML5
+                    </span>
+                </div>
+
                 <FaCss3Alt className={`${baseIconClass} ${iconStyles.css}`} />
                 <IoLogoJavascript className={`${baseIconClass} ${iconStyles.js}`} />
                 <FaJava className={`${baseIconClass} ${iconStyles.java}`} />
@@ -51,15 +54,11 @@ export default function Skills() {
                 <FaPython className={`${baseIconClass} ${iconStyles.python}`} />
                 <SiC className={`${baseIconClass} ${iconStyles.c}`} />
                 <SiCplusplus className={`${baseIconClass} ${iconStyles.cpp}`} />
-            </div>
-
-            <h2 className="text-2xl font-bold mt-10 mb-4">FERRAMENTAS</h2>
-            <div className="flex flex-wrap text-[80px] justify-between flex-wrap gap-4">
                 <VscVscode className={`${baseIconClass} ${iconStyles.vscode}`} />
                 <FaGithub className={`${baseIconClass} ${iconStyles.github}`} />
                 <RiNextjsFill className={`${baseIconClass} ${iconStyles.nextjs}`} />
                 <SiEclipseide className={`${baseIconClass} ${iconStyles.eclipse}`} />
             </div>
-        </>
+        </div>
     );
 }
