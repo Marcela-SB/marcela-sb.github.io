@@ -2,10 +2,8 @@ import { Button, TextField } from "@mui/material"
 import SendIcon from '@mui/icons-material/Send';
 export default function ContactMe() {
     return (
-    
-    <div className="m-10 md:m-25">
             
-        <div className="m-0 sm:m-30 p-5 sm:p-10 lg:p-20 bg-white/10 rounded-2xl backdrop-blur-lg">
+        <div className="m-0 mt-20 sm:m-20 sm:mt-0 p-5 sm:p-10 lg:p-20 bg-white/10 rounded-2xl backdrop-blur-lg">
 
             <h1 className="md:-mt-5 mb-5 text-[30px] md:text-[40px]">Contact Me</h1>
 
@@ -57,8 +55,6 @@ export default function ContactMe() {
 
 
         </div>
-
-    </div>
     
     );
 }
